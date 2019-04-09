@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--item
+            android:id="@+id/action_one"
+            app:showAsAction="always"
+            android:title="Item One"/-->
+    <item
+            android:id="@+id/cres"
+            android:icon="@drawable/calendar_range"
+            android:title="Ordernar data Crescente"/>
+    <item
+            android:id="@+id/decres"
+            android:icon="@drawable/calendar_range"
+            android:title="Ordernar data Decrescente"/>
+</menu>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:id="@+id/item_movie"
+              android:layout_margin="3dp"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@drawable/backgroudrd"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/cover_movie_item"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:minHeight="180dp"
+                android:minWidth="200dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/capa_test"
+        />
+
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Vingadores"
+                android:textSize="14sp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="center"
+        />
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Data: "
+            />
+
+            <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="01/10/2020"
+                    android:textSize="14sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="Generos: "
+            />
+
+            <TextView
+                    android:id="@+id/generos"
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    tools:text="Ação, Guerra."
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ellipsize="end"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="textStart"
+                    android:gravity="start"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

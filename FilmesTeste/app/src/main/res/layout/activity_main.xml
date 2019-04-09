@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@color/colorback"
+        android:orientation="vertical"
+>
+
+    <LinearLayout
+            android:layout_marginBottom="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_movies"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"/>
+
+
+            <ProgressBar
+                    android:id="@+id/progress_movie"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/pages"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_height="70dp">
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Páginas"
+                  android:textAlignment="center"
+                  android:layout_marginLeft="5dp"
+                  android:gravity="start"/>
+
+        <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                <Button android:layout_width="40dp"
+                        android:id="@+id/pg1"
+                        android:layout_height="wrap_content"
+                        tools:text="1"
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                />
+                <Button android:layout_width="40dp"
+                        android:id="@+id/pg2"
+                        android:layout_height="wrap_content"
+                        tools:text="1"
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                />
+                <Button android:layout_width="40dp"
+                        android:id="@+id/pg3"
+                        android:layout_height="wrap_content"
+                        tools:text="1"
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
